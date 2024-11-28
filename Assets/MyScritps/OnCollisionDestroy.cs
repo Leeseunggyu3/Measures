@@ -6,11 +6,11 @@ public class OnCollisionDestroy : MonoBehaviour
 {
     private void Start()
     {
-        Invoke("desTroy", 1f);
+        Invoke("desTroy", 1f); // 1초뒤 총알 제거
     }
     private void OnCollisionEnter2D(Collision2D collision)
     {
-        desTroy();
+        desTroy(); // 어느 물체든 닿이면 총알 제거
     }
     private void desTroy()
     {
